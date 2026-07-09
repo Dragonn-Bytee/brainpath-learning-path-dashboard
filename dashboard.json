@@ -1,0 +1,95 @@
+﻿{
+    "coursesEnrolled":  3,
+    "coursesCompleted":  0,
+    "quizzesTaken":  6,
+    "weeklyLearningActivity":  [
+                                   {
+                                       "day":  "Mon",
+                                       "hours":  2
+                                   },
+                                   {
+                                       "day":  "Tue",
+                                       "hours":  3.5
+                                   },
+                                   {
+                                       "day":  "Wed",
+                                       "hours":  1
+                                   },
+                                   {
+                                       "day":  "Thu",
+                                       "hours":  4
+                                   },
+                                   {
+                                       "day":  "Fri",
+                                       "hours":  2.5
+                                   },
+                                   {
+                                       "day":  "Sat",
+                                       "hours":  6
+                                   },
+                                   {
+                                       "day":  "Sun",
+                                       "hours":  3
+                                   }
+                               ],
+    "learningStreak":  {
+                           "days":  [
+                                        {
+                                            "name":  "M",
+                                            "active":  true,
+                                            "completed":  true
+                                        },
+                                        {
+                                            "name":  "T",
+                                            "active":  true,
+                                            "completed":  true
+                                        },
+                                        {
+                                            "name":  "W",
+                                            "active":  true,
+                                            "completed":  true
+                                        },
+                                        {
+                                            "name":  "T",
+                                            "active":  true,
+                                            "completed":  true
+                                        },
+                                        {
+                                            "name":  "F",
+                                            "active":  true,
+                                            "completed":  true
+                                        },
+                                        {
+                                            "name":  "S",
+                                            "active":  true,
+                                            "completed":  false
+                                        },
+                                        {
+                                            "name":  "S",
+                                            "active":  false,
+                                            "completed":  false
+                                        }
+                                    ],
+                           "currentStreak":  5
+                       },
+    "enrolledCourses":  [
+                            {
+                                "id":  "69a9ca8d1d5cf4a042880f36",
+                                "title":  "Machine Learning Fundamentals",
+                                "progress":  33,
+                                "lastLesson":  "Supervised Learning"
+                            },
+                            {
+                                "id":  "69a9ca8d1d5cf4a042880f3a",
+                                "title":  "Deep Learning with Python",
+                                "progress":  0,
+                                "lastLesson":  "What is a Neural Net?"
+                            },
+                            {
+                                "id":  "69a9ca8d1d5cf4a042880f3e",
+                                "title":  "Generative AI Basics",
+                                "progress":  0,
+                                "lastLesson":  "Transformer Architecture"
+                            }
+                        ]
+}
