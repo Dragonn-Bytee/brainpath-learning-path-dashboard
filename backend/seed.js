@@ -6,7 +6,7 @@ import Enrollment from './models/Enrollment.js';
 
 dotenv.config();
 
-const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/learningdash';
+const mongoURI = process.env.MONGODB_URI;
 
 const seedData = async () => {
     try {
@@ -286,6 +286,75 @@ const seedData = async () => {
                 ]
             }
         ];
+        
+        courses.push(
+            {
+                title: 'UI/UX Design Masterclass',
+                description: 'Learn the principles of user interface and user experience design. Create stunning prototypes with Figma and design systems.',
+                category: 'Design',
+                instructor: 'Gary Simon',
+                difficulty: 'Beginner',
+                thumbnail: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&q=80',
+                totalLessons: 5,
+                documentation: '## UI/UX Design Masterclass\n\n### Course Overview\nLearn UI/UX design from scratch.',
+                lessons: [
+                    { title: 'Intro to UX', duration: 20, order: 1, videoUrl: WEB_VIDEO },
+                    { title: 'Figma Basics', duration: 35, order: 2, videoUrl: WEB_VIDEO },
+                    { title: 'Color & Typography', duration: 30, order: 3, videoUrl: WEB_VIDEO },
+                    { title: 'Wireframing', duration: 35, order: 4, videoUrl: WEB_VIDEO },
+                    { title: 'Prototyping', duration: 40, order: 5, videoUrl: WEB_VIDEO }
+                ]
+            },
+            {
+                title: 'Mobile App Dev with React Native',
+                description: 'Build cross-platform mobile applications for iOS and Android using React Native and Expo.',
+                category: 'Mobile Development',
+                instructor: 'Mosh Hamedani',
+                difficulty: 'Intermediate',
+                thumbnail: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&q=80',
+                totalLessons: 5,
+                documentation: '## Mobile App Dev\n\n### Course Overview\nLearn React Native.',
+                lessons: [
+                    { title: 'Intro to React Native', duration: 20, order: 1, videoUrl: WEB_VIDEO },
+                    { title: 'Components & Layout', duration: 35, order: 2, videoUrl: WEB_VIDEO },
+                    { title: 'Navigation', duration: 30, order: 3, videoUrl: WEB_VIDEO },
+                    { title: 'State Management', duration: 35, order: 4, videoUrl: WEB_VIDEO },
+                    { title: 'Publishing your App', duration: 40, order: 5, videoUrl: WEB_VIDEO }
+                ]
+            },
+            {
+                title: 'Digital Marketing Fundamentals',
+                description: 'Master SEO, SEM, social media marketing, and content strategy to grow businesses online.',
+                category: 'Marketing',
+                instructor: 'Neil Patel',
+                difficulty: 'Beginner',
+                thumbnail: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=400&q=80',
+                totalLessons: 4,
+                documentation: '## Digital Marketing\n\n### Course Overview\nLearn marketing strategies.',
+                lessons: [
+                    { title: 'Intro to Digital Marketing', duration: 20, order: 1, videoUrl: ML_VIDEO },
+                    { title: 'SEO Basics', duration: 35, order: 2, videoUrl: ML_VIDEO },
+                    { title: 'Social Media Strategy', duration: 30, order: 3, videoUrl: ML_VIDEO },
+                    { title: 'Analytics & Tracking', duration: 35, order: 4, videoUrl: ML_VIDEO }
+                ]
+            },
+            {
+                title: 'Startup Business Models',
+                description: 'Learn how to validate ideas, build MVPs, and create sustainable business models for tech startups.',
+                category: 'Business',
+                instructor: 'Eric Ries',
+                difficulty: 'Intermediate',
+                thumbnail: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&q=80',
+                totalLessons: 4,
+                documentation: '## Startup Business Models\n\n### Course Overview\nLearn how to build a business.',
+                lessons: [
+                    { title: 'Ideation & Validation', duration: 20, order: 1, videoUrl: ML_VIDEO },
+                    { title: 'Business Model Canvas', duration: 35, order: 2, videoUrl: ML_VIDEO },
+                    { title: 'Building an MVP', duration: 30, order: 3, videoUrl: ML_VIDEO },
+                    { title: 'Go-To-Market Strategy', duration: 35, order: 4, videoUrl: ML_VIDEO }
+                ]
+            }
+        );
 
         const generateQuiz = (courseTitle) => {
             const quiz = [];

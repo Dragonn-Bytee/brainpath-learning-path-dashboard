@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/learningdash';
+const mongoURI = process.env.MONGODB_URI;
 
 console.log('Attempting to connect to MongoDB...');
 console.log('URI being used:', mongoURI.replace(/\/\/.*@/, '//<credentials>@')); // Hide credentials for safety

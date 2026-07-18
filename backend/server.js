@@ -1,4 +1,4 @@
-import express from 'express';
+    import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -80,9 +80,15 @@ app.use((err, req, res, next) => {
 });
 
 // Database connection
-const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/learningdash';
+// Database connection
+const mongoURI = process.env.MONGODB_URI;
 
 const startServer = async () => {
+    if (!mongoURI) {
+        console.error('FATAL ERROR: MONGODB_URI is not defined in the environment variables.');
+        process.exit(1);
+    }
+
     try {
         console.log('Connecting to MongoDB...');
         // Disable strictQuery to avoid warnings in Mongoose 7+

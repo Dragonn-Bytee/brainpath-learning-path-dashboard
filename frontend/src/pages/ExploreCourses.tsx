@@ -32,7 +32,7 @@ export default function ExploreCourses() {
     const [enrolledIds, setEnrolledIds] = useState<Set<string>>(new Set());
     const [toast, setToast] = useState<{ show: boolean, message: string, type: 'success' | 'error' } | null>(null);
 
-    const categories = ['All', 'AI', 'Machine Learning', 'Web Development', 'Data Science'];
+    const categories = ['All', 'AI', 'Machine Learning', 'Web Development', 'Data Science', 'Design', 'Business', 'Cybersecurity', 'Mobile Development', 'Marketing'];
 
     useEffect(() => {
         Promise.all([

@@ -1,7 +1,10 @@
 import mongoose from 'mongoose';
 import User from './models/User.js';
 
-const mongoURI = "mongodb+srv://kathuriaudit7_db_user:250401%40%40@learningpathdashboard.iscy74m.mongodb.net/learningdash?appName=learningpathdashboard";
+import dotenv from 'dotenv';
+dotenv.config();
+
+const mongoURI = process.env.MONGODB_URI;
 
 mongoose.connect(mongoURI)
     .then(async () => {
